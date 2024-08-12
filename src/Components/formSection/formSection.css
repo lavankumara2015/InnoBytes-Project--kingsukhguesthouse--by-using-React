@@ -1,0 +1,152 @@
+
+.formSection{
+    margin-top: 1.4rem;
+}
+.formSection__container{
+    display: flex;
+}
+.formSection__contactInfo{
+    background-color: var(--primary-color);
+    color: white;
+    width: 4.4rem;
+    height: 5.6rem;
+    position: relative;
+    z-index: 1;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+    margin-left: 2.5rem;
+}
+.formSection__contactInformation{
+display: flex;
+flex-direction: column;
+padding: 0.45rem;
+
+}
+.formSection__contactInformation p{
+    font-size: 0.3rem;
+    font-weight: 500;
+    padding-top: 0.1rem;
+    padding-bottom: 0.25rem;
+}
+.formSection__contactInformation a{
+text-decoration: none;
+color: white;
+}
+.formSection__contactInformation ul{
+    list-style: none;
+    font-size: 0.20rem;
+    padding-left: 0 !important;
+    margin-bottom: 0.15rem;
+}
+.formSection__contactInformation ul li{
+    display: flex;
+    gap: 0.1rem;
+    padding: 0.1rem;
+    font-weight: 300;
+}
+.formSection__contactInformation  img{
+    width: 0.35rem;
+    height: 0.35rem;    
+    filter: brightness(0) invert(1);
+}
+.socialMedia{
+    display: flex; 
+    gap: 0.2rem;
+    padding-left: 0.5rem;
+    position: relative;
+    top: 0.1rem;
+    margin-bottom: 0rem !important;
+}
+.socialMedia li{
+    list-style: none;
+color: white;
+}
+.socialMedia li img{
+    list-style: none;
+    filter: brightness(0) invert(1);
+}
+
+
+.contactForm1 h2 {
+    font-size: 0.3rem;
+    color: var(--primary-color);
+  }
+
+
+.contactForm1{
+  width: 12rem;
+  height: 6.65rem;
+  border-radius: 0.25rem;
+  position: relative;
+  bottom: 0.5rem;
+  right: 2.4rem;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+
+.Map_section{
+  padding-top: 0.4rem;
+  margin-bottom: -0.31rem;
+}
+
+.inputsChildOne{
+  display: flex;
+  justify-content: space-between;
+  width: 8rem;
+  padding-top: 0.2rem;
+}
+
+.inputsChildOne>input{
+  width: 3.6rem;
+  height: 0.30rem;
+  font-size: 0.25rem;
+border: none;
+outline: none;
+border-bottom: 1px solid;
+}
+.inputsChildTwo{
+  display: flex;
+  justify-content: space-between;
+  width: 8rem;
+  padding-top: 0.8rem;
+}
+.inputsChildTwo>input{
+  width: 3.6rem;
+  height: 0.30rem;
+  font-size: 0.25rem;
+  border: none;
+outline: none;
+border-bottom: 1px solid;
+}
+
+textarea{
+  font-size: 0.25rem;
+  width: 8rem;
+  padding-top: 0.2rem;
+  border: none;
+  resize: none;
+  border-bottom:1px solid;
+  outline: none;
+}
+.textarea{
+  padding-top: 0.2rem;
+}
+
+.submit>input{
+  padding: 0.135rem 0.6rem;
+  font-size: 0.225rem;
+  font-weight: 300;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.25rem;
+  position: relative;
+  bottom: 0.55rem;
+  left: 0.15rem;
+}
+
+input::placeholder,
+textarea::placeholder{
+  color: var(--secondary-color);
+}

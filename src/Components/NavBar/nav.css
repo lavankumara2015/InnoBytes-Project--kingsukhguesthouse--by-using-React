@@ -1,0 +1,107 @@
+header {
+    background-image: url("../../../public/assets/ayodhya.webp");
+    background-position: center;
+    background-size: cover;
+    height: 8.55rem;
+    width: 100%;
+  }
+  
+  .navbar {
+    font-size: 0.25rem !important;
+    width: 100%;
+    height: 2.2rem;
+    padding-top: 0;
+  }
+  
+  .navbar-brand p {
+    font-size: 0.25rem;
+    color: var(--white);
+  }
+  
+  .navbar-nav {
+    margin-left: 18%;
+  }
+  
+  .nav-item a {
+    position: relative;
+    padding: 0.2rem !important;
+    font-size: 0.2rem;
+    cursor: pointer;
+    color: var(--white);
+  }
+  
+  .nav-item a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+
+  
+  .nav-item a:hover::after{
+    width: 70%;
+  }
+  .nav-item a::after {
+    position: absolute;
+    content: "";
+    left: 0.20rem;
+    bottom: 0.12rem;
+    height: 0.019rem;
+    border-radius: 0.1rem;
+    width: 0;
+    background-color: var(--primary-color);
+    transition: 0.3s;
+    transform-origin: left;
+  }
+  .container-fluid {
+    padding: 0 1.35rem;
+  }
+  .header__quotation {
+    text-align: center;
+    margin-top: 1.15rem;
+    visibility: visible;
+  }
+  
+  .header__quotation p {
+    font-size: 0.24rem;
+    color: var(--white);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
+    transition-delay: 0.2s;
+  }
+  
+  .header__quotation.visible p {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+  
+  .header__quotation h3 {
+    font-size: 0.8rem;
+    color: white;
+    line-height: 0.37rem;
+    margin-top: 0.4rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
+    transition-delay: 0.65s; 
+  }
+  
+  .header__quotation.visible h3 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .header__btn{
+    width: 14.2rem;
+    padding: 0.4rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-top:2.5rem;
+    margin-left:2.18rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  

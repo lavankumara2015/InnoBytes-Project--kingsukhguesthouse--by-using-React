@@ -1,0 +1,17 @@
+
+
+.bookNowBTN{
+    font-size: 0.18rem;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--white);
+    padding: 0.15rem 0.30rem;
+    font-weight: 500;
+    border-radius: 0.1rem;
+    cursor: pointer;
+}
+
+.bookNowBTN a{
+    text-decoration: none;
+    color: var(--white);
+  }

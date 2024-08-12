@@ -1,0 +1,83 @@
+
+footer {
+    background-color: black;
+    height: 6.35rem;
+}
+.footer__container{
+    width: 82%;
+display: flex;
+align-content: center;
+margin-left: 9%;
+padding-top: 1.25rem;
+justify-content: space-evenly;
+}
+
+.footer__hotelName h5{
+    font-size: 0.23rem;
+    width: 0.1rem;
+    color: rgb(255, 255, 255) !important;
+}
+
+.footer__hotelName p,
+.footer__links p{
+    list-style: none;
+    font-size: 0.2rem;
+    width: 3.4rem;
+    color: var(--text-light);
+}
+.footer__links h5{
+    font-size: 0.23rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255)
+}
+.footer__links ul{
+list-style: none;
+font-size: 0.2rem;
+padding-left: 0rem !important;
+line-height: 0.5rem !important;
+
+}
+.footer__links ul li a,
+.footer__links a{
+    text-decoration: none;
+    color: var(--text-light);
+}
+.footer__links a{
+font-size: 0.2rem;
+}
+.footer__links ul li a:hover,
+.footer__links a:hover{
+    color: white;
+    transition: 0.5s;
+    /* padding-left: 0.01rem; */
+
+}
+.footer__social-links i{
+    color: white;
+    font-size: 0.30rem;
+    margin: 0.1rem;
+    position: relative;
+    right: 0.1rem;
+    bottom: 0.5rem;  
+}
+
+
+.footer__social-links i:hover{
+    color: var(--primary-color);
+}
+
+.footer__links p{
+padding-top: 0.25rem;
+position: relative;
+bottom: 0.2rem;
+}
+.footer__bookNowBTN{
+    position: relative;
+    bottom: 0.5rem;
+}
+.footer__copyRight{
+    padding-top: 0.18rem;
+    font-size: 0.175rem;
+    color: var(--text-light);
+text-align: center;
+}
