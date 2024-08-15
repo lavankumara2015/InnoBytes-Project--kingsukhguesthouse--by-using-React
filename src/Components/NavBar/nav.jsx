@@ -53,20 +53,25 @@ const NavBar = () => {
                 </li>
               </ul>
             </div>
-            <BookNowBTN />
+            <div className="navBar__btn">
+              <BookNowBTN />
+            </div>
           </div>
         </nav>
 
         <div className={`header__quotation ${isVisible ? "visible" : ""}`}>
           <p>Simple - Unique - Friendly</p>
           <h3>Make Yourself At Home</h3>
-          <h3>In Our <span style={{ color: "var(--primary-color" }}>Guest House</span>.</h3>
+          <h3>
+            In Our
+            <span style={{ color: "var(--primary-color" }}>Guest House</span>.
+          </h3>
         </div>
         <div className="header__btn">
           <BookNowBTN />
         </div>
       </header>
-      <br/>
+      <br />
     </>
   );
 };

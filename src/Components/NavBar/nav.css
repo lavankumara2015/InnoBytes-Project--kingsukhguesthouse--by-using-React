@@ -1,107 +1,179 @@
 header {
-    background-image: url("../../../public/assets/ayodhya.webp");
-    background-position: center;
-    background-size: cover;
-    height: 8.55rem;
-    width: 100%;
+  background-image: url("../../../public/assets/ayodhya.webp");
+  background-position: center;
+  background-size: cover;
+  height: 8.55rem;
+  width: 100%;
+}
+
+.navbar {
+  font-size: 0.25rem !important;
+  width: 100%;
+  height: 2.2rem;
+  padding-top: 0;
+}
+
+.navbar-brand p {
+  font-size: 0.25rem;
+  color: var(--white);
+}
+
+.navbar-nav {
+  margin-left: 18%;
+}
+
+.nav-item a {
+  position: relative;
+  padding: 0.2rem !important;
+  font-size: 0.2rem;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.nav-item a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav-item a:hover::after {
+  width: 70%;
+}
+.nav-item a::after {
+  position: absolute;
+  content: "";
+  left: 0.2rem;
+  bottom: 0.12rem;
+  height: 0.019rem;
+  border-radius: 0.1rem;
+  width: 0;
+  background-color: var(--primary-color);
+  transition: 0.3s;
+  transform-origin: left;
+}
+.container-fluid {
+  padding: 0 1.35rem;
+}
+.header__quotation {
+  text-align: center;
+  margin-top: 1.15rem;
+  visibility: visible;
+}
+
+.header__quotation p {
+  font-size: 0.24rem;
+  color: var(--white);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s cubic-bezier(0.5, 0, 0, 1),
+    transform 1s cubic-bezier(0.5, 0, 0, 1);
+  transition-delay: 0.2s;
+}
+
+.header__quotation.visible p {
+  opacity: 0.5;
+  transform: translateY(0);
+}
+
+.header__quotation h3 {
+  font-size: 0.8rem;
+  color: white;
+  line-height: 0.37rem;
+  margin-top: 0.4rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s cubic-bezier(0.5, 0, 0, 1),
+    transform 1s cubic-bezier(0.5, 0, 0, 1);
+  transition-delay: 0.65s;
+}
+
+.header__quotation.visible h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header__btn {
+  width: 14.2rem;
+  padding: 0.4rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin-top: 2.5rem;
+  margin-left: 2.18rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-toggler {
+    font-size: 0.8rem;
+    border: none;
+    outline: none !important;
   }
-  
-  .navbar {
-    font-size: 0.25rem !important;
-    width: 100%;
-    height: 2.2rem;
-    padding-top: 0;
+  .container-fluid {
+    background-color: var(--primary-color);
+    padding: 0.35rem 0.9rem;
+  }
+  header {
+    background-position: top;
+    height: 33rem;
+  }
+
+  .navBar__btn {
+    display: none !important;
+  }
+  .navbar-toggler {
+    color: var(--primary-color) !important;
   }
   
   .navbar-brand p {
-    font-size: 0.25rem;
-    color: var(--white);
+    font-size: 0.8rem;
   }
-  
-  .navbar-nav {
-    margin-left: 18%;
+  .navbar-toggler-icon {
+    color: var(--primary-color) !important;
+    filter: invert(100%);
   }
-  
-  .nav-item a {
+  .navbar-collapse {
+    background-color: var(--primary-color-dark);
     position: relative;
-    padding: 0.2rem !important;
-    font-size: 0.2rem;
-    cursor: pointer;
-    color: var(--white);
+    z-index: 99999;
+    padding-bottom: 1.3rem;
+    transition: 0.6s;
   }
-  
-  .nav-item a:hover {
-    color: rgb(255, 255, 255);
-  }
-  
-
-  
-  .nav-item a:hover::after{
-    width: 70%;
+  .nav-item a {
+    padding: 1.25rem 0rem 0rem 5.6rem !important;
+    font-size: 0.8rem;
   }
   .nav-item a::after {
-    position: absolute;
-    content: "";
-    left: 0.20rem;
-    bottom: 0.12rem;
-    height: 0.019rem;
-    border-radius: 0.1rem;
-    width: 0;
-    background-color: var(--primary-color);
-    transition: 0.3s;
-    transform-origin: left;
+    position: unset;
   }
-  .container-fluid {
-    padding: 0 1.35rem;
-  }
+
   .header__quotation {
-    text-align: center;
-    margin-top: 1.15rem;
-    visibility: visible;
+    margin-top: 5rem;
   }
-  
+
   .header__quotation p {
-    font-size: 0.24rem;
-    color: var(--white);
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
-    transition-delay: 0.2s;
+    font-size: 1rem;
   }
-  
-  .header__quotation.visible p {
-    opacity: 0.5;
-    transform: translateY(0);
-  }
-  
+
   .header__quotation h3 {
-    font-size: 0.8rem;
-    color: white;
-    line-height: 0.37rem;
-    margin-top: 0.4rem;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
-    transition-delay: 0.65s; 
+    font-size: 3rem;
+    line-height: 3.15rem;
+    margin-top: 0.6rem;
+    width: 25rem;
   }
-  
-  .header__quotation.visible h3 {
-    opacity: 1;
-    transform: translateY(0);
+
+  .header__btn {
+    width: 23rem;
+    padding: 1.6rem;
+    margin-top: 8rem;
+    margin-left: 1rem;
   }
-  
-  .header__btn{
-    width: 14.2rem;
-    padding: 0.4rem;
-    background-color: var(--white);
-    border-radius: 10px;
-    margin-top:2.5rem;
-    margin-left:2.18rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .navbar-toggler {
+    display: none;
   }
-  
-  
+}
