@@ -68,7 +68,7 @@ function FormSection() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" className="socialMedia__linkedIN">
                 <img src="https://www.kingsukhguesthouse.com/images/5.png" />
               </a>
             </li>

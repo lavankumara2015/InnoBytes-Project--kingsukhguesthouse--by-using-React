@@ -65,6 +65,10 @@ color: white;
     list-style: none;
     filter: brightness(0) invert(1);
 }
+.socialMedia__linkedIN{
+  position: relative;
+  bottom: 0.05rem ;
+}
 .contactForm1 h2 {
     font-size: 0.3rem;
     color: var(--primary-color);
