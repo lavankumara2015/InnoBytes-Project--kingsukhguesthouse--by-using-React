@@ -51,25 +51,25 @@ function FormSection() {
           <ul class="socialMedia">
             <li>
               <a href="#">
-                <img src="https://www.kingsukhguesthouse.com/images/1.png" />
+                <img src="https://www.kingsukhguesthouse.com/images/1.png" alt="facebook logo" />
               </a>
             </li>
             <li>
               <a
-                href="https://www.instagram.com/kingsukhguesthouse/"
+                href="https://www.instagram.com/kingsukhguesthouse/" 
                 target="_blank"
               >
-                <img src="https://www.kingsukhguesthouse.com/images/3.png" />
+                <img src="https://www.kingsukhguesthouse.com/images/3.png" alt="instagram logo" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="https://www.kingsukhguesthouse.com/images/2.png" />
+                <img src="https://www.kingsukhguesthouse.com/images/2.png" alt="twitter logo" />
               </a>
             </li>
             <li>
               <a href="#" className="socialMedia__linkedIN">
-                <img src="https://www.kingsukhguesthouse.com/images/5.png" />
+                <img src="https://www.kingsukhguesthouse.com/images/5.png" alt="linkedIn logo"/>
               </a>
             </li>
           </ul>
